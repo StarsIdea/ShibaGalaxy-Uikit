@@ -2924,9 +2924,10 @@ var getTextColor = function (_a) {
         return theme.colors.textDisabled;
     if ($isActive)
         return theme.colors.secondary;
-    return theme.colors.textSubtle;
+    // return theme.colors.textSubtle;
+    return "#333";
 };
-var DropdownMenuItem = styled__default['default'].button(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  align-items: center;\n  border: 0;\n  background: transparent;\n  color: ", ";\n  cursor: ", ";\n  font-weight: ", ";\n  display: flex;\n  font-size: 16px;\n  height: 48px;\n  justify-content: space-between;\n  outline: 0;\n  padding-left: 16px;\n  padding-right: 16px;\n  width: 100%;\n\n  &:hover:not(:disabled) {\n    background-color: ", ";\n  }\n\n  &:active:not(:disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n  }\n"], ["\n  align-items: center;\n  border: 0;\n  background: transparent;\n  color: ", ";\n  cursor: ", ";\n  font-weight: ", ";\n  display: flex;\n  font-size: 16px;\n  height: 48px;\n  justify-content: space-between;\n  outline: 0;\n  padding-left: 16px;\n  padding-right: 16px;\n  width: 100%;\n\n  &:hover:not(:disabled) {\n    background-color: ", ";\n  }\n\n  &:active:not(:disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n  }\n"])), function (_a) {
+var DropdownMenuItem = styled__default['default'].button(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  align-items: center;\n  border: 0;\n  background: transparent;\n  color: ", ";\n  cursor: ", ";\n  font-weight: ", ";\n  display: flex;\n  font-size: 16px;\n  height: 48px;\n  justify-content: space-between;\n  outline: 0;\n  padding-left: 16px;\n  padding-right: 16px;\n  width: 100%;\n\n  &:hover:not(:disabled) {\n    // background-color: ", ";\n    background-color: #35354720;\n  }\n\n  &:active:not(:disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n  }\n"], ["\n  align-items: center;\n  border: 0;\n  background: transparent;\n  color: ", ";\n  cursor: ", ";\n  font-weight: ", ";\n  display: flex;\n  font-size: 16px;\n  height: 48px;\n  justify-content: space-between;\n  outline: 0;\n  padding-left: 16px;\n  padding-right: 16px;\n  width: 100%;\n\n  &:hover:not(:disabled) {\n    // background-color: ", ";\n    background-color: #35354720;\n  }\n\n  &:active:not(:disabled) {\n    opacity: 0.85;\n    transform: translateY(1px);\n  }\n"])), function (_a) {
     var theme = _a.theme, disabled = _a.disabled, $isActive = _a.$isActive;
     return getTextColor({ theme: theme, disabled: disabled, $isActive: $isActive });
 }, function (_a) {
@@ -2948,7 +2949,7 @@ var StyledOverlay = styled__default['default'].div(templateObject_4$2 || (templa
     var theme = _a.theme;
     return theme.colors.text + "99";
 });
-var StyledDropdownMenu = styled__default['default'].div(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  padding-bottom: 4px;\n  padding-top: 4px;\n  pointer-events: auto;\n  width: ", ";\n  visibility: visible;\n  z-index: 1001;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: 1px solid ", ";\n  border-radius: 16px;\n  padding-bottom: 4px;\n  padding-top: 4px;\n  pointer-events: auto;\n  width: ", ";\n  visibility: visible;\n  z-index: 1001;\n\n  ",
+var StyledDropdownMenu = styled__default['default'].div(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  // background-color: ", ";\n  background-color: #fff;\n  // border: 1px solid ", ";\n  border: 1px solid #fff;\n  border-radius: 5px;\n  padding-bottom: 4px;\n  padding-top: 4px;\n  pointer-events: auto;\n  width: ", ";\n  visibility: visible;\n  z-index: 1001;\n\n  ", "\n"], ["\n  // background-color: ", ";\n  background-color: #fff;\n  // border: 1px solid ", ";\n  border: 1px solid #fff;\n  border-radius: 5px;\n  padding-bottom: 4px;\n  padding-top: 4px;\n  pointer-events: auto;\n  width: ", ";\n  visibility: visible;\n  z-index: 1001;\n\n  ",
     "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.background;
@@ -3111,11 +3112,14 @@ var StyledMenuItemContainer = styled__default['default'].div(templateObject_1$E 
         $variant === "subMenu" &&
         "\n      &:before{\n        content: \"\";\n        position: absolute;\n        bottom: 0;\n        height: 4px;\n        width: 100%;\n        background-color: " + theme.colors.primary + ";\n        border-radius: 2px 2px 0 0;\n      }\n    ";
 });
-var StyledMenuItem = styled__default['default'].a(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n\n  color: ", ";\n  font-size: 16px;\n  font-weight: ", ";\n\n  ", "\n\n  ", "\n\n  &:hover {\n    background: ", ";\n    ", ";\n  }\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n\n  color: ", ";\n  font-size: 16px;\n  font-weight: ", ";\n\n  ",
+var StyledMenuItem = styled__default['default'].a(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n\n  // color: ", ";\n  color: ", ";\n  // font-size: 16px;\n  font-size: .875rem;\n  letter-spacing: .0892857143em;\n  font-weight: ", ";\n\n  ", "\n\n  ", "\n\n  &:hover {\n    // background: ", ";\n    background-color: #35354720;\n    ", ";\n  }\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n\n  // color: ", ";\n  color: ", ";\n  // font-size: 16px;\n  font-size: .875rem;\n  letter-spacing: .0892857143em;\n  font-weight: ", ";\n\n  ",
     "\n\n  ",
-    "\n\n  &:hover {\n    background: ", ";\n    ", ";\n  }\n"])), function (_a) {
+    "\n\n  &:hover {\n    // background: ", ";\n    background-color: #35354720;\n    ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme, $isActive = _a.$isActive;
     return ($isActive ? theme.colors.secondary : theme.colors.textSubtle);
+}, function (_a) {
+    _a.theme; var $isActive = _a.$isActive;
+    return ($isActive ? "#d63341" : "#fff");
 }, function (_a) {
     var $isActive = _a.$isActive;
     return ($isActive ? "600" : "400");
@@ -3178,15 +3182,15 @@ var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObjec
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
-var LogoText = styled__default['default'].div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  color: #fdd325;\n  font-size: 1.5rem;\n"], ["\n  color: #fdd325;\n  font-size: 1.5rem;\n"])));
+var LogoText = styled__default['default'].div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  font-weight: 700;\n  color: #fff;\n  caret-color: #fff;\n  font-size: 1.25rem;\n  line-height: 1.5;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-family: berlin-sans-regular;\n"], ["\n  font-weight: 700;\n  color: #fff;\n  caret-color: #fff;\n  font-size: 1.25rem;\n  line-height: 1.5;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-family: berlin-sans-regular;\n"])));
 var Logo$2 = function (_a) {
     _a.isPushed; _a.togglePush; var isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$T, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo$1, { className: "desktop-icon", isDark: isDark }),
-        React__default['default'].createElement(LogoText, null, "1DogeLand")));
-    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "1Doge home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "1Doge home page" }, innerLogo))));
+        React__default['default'].createElement(LogoText, null, "ShibaGalaxy")));
+    return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "ShibaGalaxy home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "ShibaGalaxy home page" }, innerLogo))));
 };
 var templateObject_1$G, templateObject_2$e;
 
@@ -3383,9 +3387,9 @@ var UserBlock = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout;
     var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { size: "sm", variant: "tertiary", onClick: function () {
+    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { size: "sm", variant: "tertiary", color: "secondary", onClick: function () {
             onPresentAccountModal();
-        } }, accountEllipsis)) : (React__default['default'].createElement(Button, { size: "sm", onClick: function () {
+        } }, accountEllipsis)) : (React__default['default'].createElement(Button, { size: "sm", variant: "tertiary", color: "secondary", onClick: function () {
             onPresentConnectModal();
         } }, "Connect"))));
 };
@@ -3514,7 +3518,7 @@ var UserBlock = function (_a) {
 var MENU_HEIGHT = 64;
 
 var Wrapper$1 = styled__default['default'].div(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled__default['default'].nav(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
+var StyledNav = styled__default['default'].nav(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  // background-color: ", ";\n  background-color: #fea726;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  // background-color: ", ";\n  background-color: #fea726;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {
@@ -3671,10 +3675,10 @@ var templateObject_1$M;
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#aa8929",
-    primaryBright: "#aa8929",
-    primaryDark: "#aa8929",
-    secondary: "#7645D9",
+    primary: "#FFC50D",
+    primaryBright: "#FEA726",
+    primaryDark: "#FEA726",
+    secondary: "#D63341",
     success: "#31D0AA",
     warning: "#FFB237",
 };
@@ -3684,7 +3688,9 @@ var brandColors = {
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", backgroundAlt2: "rgba(255, 255, 255, 0.7)", cardBorder: "#E7E3EB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", tertiary: "#EFF4F5", text: "#452A7A", textDisabled: "#BDC2C4", textSubtle: "#8f80ba", borderColor: "#E9EAEB", card: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#343135", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", backgroundAlt2: "rgba(39, 38, 44, 0.7)", cardBorder: "#383241", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", tertiary: "#353547", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: "#9A6AFF", background: "#343135", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", backgroundAlt2: "rgba(39, 38, 44, 0.7)", cardBorder: "#383241", contrast: "#FFFFFF", invertedContrast: "#191326", input: "#483f5a", primaryDark: "#0098A1", 
+    // tertiary: "#353547",
+    tertiary: "#d63341", text: "#EAE2FC", textDisabled: "#666171", textSubtle: "#c9c4d4", borderColor: "#524B63", card: "#27262c", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
     } });
 

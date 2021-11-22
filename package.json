@@ -1,14 +1,14 @@
 {
-  "name": "1dogeland-uikit",
-  "version": "0.1.8",
-  "description": "Set of UI components for 1dogeland projects",
+  "name": "ShibaGalaxy-uikit",
+  "version": "0.0.1",
+  "description": "Set of UI components for ShibaGalaxy projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/starsidea/1dogeland-uikit",
+  "repository": "https://github.com/starsidea/ShibaGalaxy-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
