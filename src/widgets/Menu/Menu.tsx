@@ -127,7 +127,7 @@ const Menu: React.FC<NavProps> = ({
         <Flex alignItems="center">
           {!isMobile && (
             <Box mr="12px">
-              <CakePrice cakePriceUsd={cakePriceUsd} />
+              {/* <CakePrice cakePriceUsd={cakePriceUsd} /> */}
             </Box>
           )}
           <UserBlock account={account} login={login} logout={logout} />

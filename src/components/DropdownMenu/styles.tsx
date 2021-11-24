@@ -24,6 +24,7 @@ export const DropdownMenuItem = styled.button<StyledDropdownMenuItemProps & { $i
   font-weight: ${({ $isActive = false }) => ($isActive ? "600" : "400")};
   display: flex;
   font-size: 16px;
+  font-family: berlin-sans-regular;
   height: 48px;
   justify-content: space-between;
   outline: 0;

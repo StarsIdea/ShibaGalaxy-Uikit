@@ -47,6 +47,9 @@ export declare type Colors = {
     textSubtle: string;
     borderColor: string;
     card: string;
+    cardHeader?: string;
+    cardItemKey?: string;
+    cardItemValue?: string;
     gradients: Gradients;
     binance: string;
 };

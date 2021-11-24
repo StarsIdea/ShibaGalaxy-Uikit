@@ -5,7 +5,8 @@ export type CardBodyProps = SpaceProps;
 
 const CardBody = styled.div<CardBodyProps>`
   ${space}
-  background-color: ${({ theme }) => theme.card.background};
+  // background-color: ${({ theme }) => theme.card.background};
+  background-color: transparent;
 `;
 
 CardBody.defaultProps = {

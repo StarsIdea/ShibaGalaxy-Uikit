@@ -6,7 +6,8 @@ export type CardFooterProps = SpaceProps;
 const CardFooter = styled.div<CardFooterProps>`
   border-top: 1px solid ${({ theme }) => theme.colors.borderColor};
   ${space}
-  background-color: ${({ theme }) => theme.card.background};
+  // background-color: ${({ theme }) => theme.card.background};
+  background-color: transparent;
 `;
 
 CardFooter.defaultProps = {

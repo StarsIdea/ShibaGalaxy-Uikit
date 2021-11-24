@@ -53,6 +53,9 @@ export type Colors = {
   textSubtle: string;
   borderColor: string;
   card: string;
+  cardHeader?: string;
+  cardItemKey?: string;
+  cardItemValue?: string;
 
   // Gradients
   gradients: Gradients;

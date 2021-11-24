@@ -26,11 +26,14 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   align-items: center;
 
   // color: ${({ theme, $isActive }) => ($isActive ? theme.colors.secondary : theme.colors.textSubtle)};
-  color: ${({ theme, $isActive }) => ($isActive ? "#d63341" : "#fff")};
+  color: ${({ $isActive }) => ($isActive ? "#d63341" : "#fff")};
   // font-size: 16px;
   font-size: .875rem;
-  letter-spacing: .0892857143em;
-  font-weight: ${({ $isActive }) => ($isActive ? "600" : "400")};
+  letter-spacing: 1px;
+  font-family: berlin-sans-regular;
+  // letter-spacing: .0892857143em;
+  font-weight: 600;
+  // font-weight: ${({ $isActive }) => ($isActive ? "600" : "400")};
 
   ${({ $statusColor, theme }) =>
     $statusColor &&
