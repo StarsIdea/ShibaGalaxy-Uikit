@@ -42,13 +42,29 @@ const LogoText = styled.div`
   font-family: berlin-sans-regular;
 `;
 
+const HeaderText = styled.div`
+
+`;
+
+const BottomText = styled.div`
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 400;
+  background-image: url(/images/Rise-of-Shibas-.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 60px;
+  width: 200px;
+`;
+
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
       <LogoIcon className="mobile-icon" />
       <LogoWithText className="desktop-icon" isDark={isDark} />
-      <LogoText>ShibaGalaxy</LogoText>
+      {/* <LogoText><HeaderText>ShibaGalaxy</HeaderText><BottomText>Rise of Shibas</BottomText></LogoText> */}
+      <LogoText><HeaderText>ShibaGalaxy</HeaderText><BottomText></BottomText></LogoText>
     </>
   );
 

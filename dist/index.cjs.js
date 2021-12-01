@@ -3173,16 +3173,20 @@ var StyledLink$1 = styled__default['default'](reactRouterDom.Link)(templateObjec
     return theme.mediaQueries.nav;
 });
 var LogoText = styled__default['default'].div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  font-weight: 700;\n  color: #fff;\n  caret-color: #fff;\n  font-size: 1.25rem;\n  line-height: 1.5;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-family: berlin-sans-regular;\n"], ["\n  font-weight: 700;\n  color: #fff;\n  caret-color: #fff;\n  font-size: 1.25rem;\n  line-height: 1.5;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-family: berlin-sans-regular;\n"])));
+var HeaderText = styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n\n"], ["\n\n"])));
+var BottomText = styled__default['default'].div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  font-size: 0.75rem;\n  line-height: 1;\n  font-weight: 400;\n  background-image: url(/images/Rise-of-Shibas-.gif);\n  background-repeat: no-repeat;\n  background-size: contain;\n  height: 60px;\n  width: 200px;\n"], ["\n  font-size: 0.75rem;\n  line-height: 1;\n  font-weight: 400;\n  background-image: url(/images/Rise-of-Shibas-.gif);\n  background-repeat: no-repeat;\n  background-size: contain;\n  height: 60px;\n  width: 200px;\n"])));
 var Logo$2 = function (_a) {
     _a.isPushed; _a.togglePush; var isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
         React__default['default'].createElement(Icon$T, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo$1, { className: "desktop-icon", isDark: isDark }),
-        React__default['default'].createElement(LogoText, null, "ShibaGalaxy")));
+        React__default['default'].createElement(LogoText, null,
+            React__default['default'].createElement(HeaderText, null, "ShibaGalaxy"),
+            React__default['default'].createElement(BottomText, null))));
     return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "ShibaGalaxy home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "ShibaGalaxy home page" }, innerLogo))));
 };
-var templateObject_1$F, templateObject_2$e;
+var templateObject_1$F, templateObject_2$e, templateObject_3$7, templateObject_4$3;
 
 var Icon$2f = function (props) {
     return (React__default['default'].createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
@@ -3505,7 +3509,7 @@ var UserBlock = function (_a) {
         ],
     },
 ];
-var MENU_HEIGHT = 64;
+var MENU_HEIGHT = 100;
 
 var Wrapper$1 = styled__default['default'].div(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
 var StyledNav = styled__default['default'].nav(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  // background-color: ", ";\n  background-color: #fea726;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  // background-color: ", ";\n  background-color: #fea726;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
@@ -3515,8 +3519,8 @@ var StyledNav = styled__default['default'].nav(templateObject_2$g || (templateOb
     var theme = _a.theme;
     return theme.nav.background;
 });
-var BodyWrapper = styled__default['default'].div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled__default['default'].div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
+var BodyWrapper = styled__default['default'].div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
+var Inner = styled__default['default'].div(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 });
@@ -3524,6 +3528,8 @@ styled__default['default'](Overlay)(templateObject_5$2 || (templateObject_5$2 = 
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
+var StyledFlex = styled__default['default'](Flex)(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n"], ["\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n"])));
+var StyledBox = styled__default['default'](Box)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  align-items: center;\n"], ["\n  align-items: center;\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark; _a.toggleTheme; _a.langs; _a.setLang; _a.currentLang; _a.cakePriceUsd; var links = _a.links; _a.footerLinks; _a.priceLink; _a.buyCakeLabel; _a.profile; var children = _a.children;
@@ -3564,17 +3570,17 @@ var Menu = function (_a) {
     var homeLink = links.find(function (link) { return link.label === "Home"; });
     return (React__default['default'].createElement(Wrapper$1, null,
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
-            React__default['default'].createElement(Flex, null,
+            React__default['default'].createElement(StyledFlex, null,
                 React__default['default'].createElement(Logo$2, { isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
                 !isMobile && React__default['default'].createElement(MenuItems, { items: links, ml: "24px" })),
             React__default['default'].createElement(Flex, { alignItems: "center" },
-                !isMobile && (React__default['default'].createElement(Box, { mr: "12px" })),
+                !isMobile && (React__default['default'].createElement(StyledBox, { mr: "12px" })),
                 React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }))),
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             isMobile && React__default['default'].createElement(BottomNav, { items: links }))));
 };
-var templateObject_1$I, templateObject_2$g, templateObject_3$7, templateObject_4$3, templateObject_5$2;
+var templateObject_1$I, templateObject_2$g, templateObject_3$8, templateObject_4$4, templateObject_5$2, templateObject_6$1, templateObject_7;
 
 var ToastAction = function (_a) {
     var action = _a.action;

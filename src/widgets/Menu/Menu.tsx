@@ -62,6 +62,14 @@ const MobileOnlyOverlay = styled(Overlay)`
   }
 `;
 
+const StyledFlex = styled(Flex)`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`
+const StyledBox = styled(Box)`
+  align-items: center;
+`
 const Menu: React.FC<NavProps> = ({
   account,
   login,
@@ -120,15 +128,15 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <Flex>
+        <StyledFlex>
           <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
           {!isMobile && <MenuItems items={links} ml="24px" />}
-        </Flex>
+        </StyledFlex>
         <Flex alignItems="center">
           {!isMobile && (
-            <Box mr="12px">
+            <StyledBox mr="12px">
               {/* <CakePrice cakePriceUsd={cakePriceUsd} /> */}
-            </Box>
+            </StyledBox>
           )}
           <UserBlock account={account} login={login} logout={logout} />
         </Flex>
