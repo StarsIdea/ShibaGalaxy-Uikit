@@ -1696,7 +1696,7 @@ CardHeader.defaultProps = {
 };
 var templateObject_1$b;
 
-var CardFooter = styled.div(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  border-top: 1px solid ", ";\n  ", "\n  // background-color: ", ";\n  background-color: transparent;\n"], ["\n  border-top: 1px solid ", ";\n  ", "\n  // background-color: ", ";\n  background-color: transparent;\n"])), function (_a) {
+var CardFooter = styled.div(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  // border-top: 1px solid ", ";\n  ", "\n  // background-color: ", ";\n  background-color: transparent;\n"], ["\n  // border-top: 1px solid ", ";\n  ", "\n  // background-color: ", ";\n  background-color: transparent;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.borderColor;
 }, space, function (_a) {
@@ -3516,7 +3516,7 @@ styled(Overlay)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject
     return theme.mediaQueries.nav;
 });
 var StyledFlex = styled(Flex)(templateObject_6$1 || (templateObject_6$1 = __makeTemplateObject(["\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n"], ["\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n"])));
-var StyledBox = styled(Box)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  align-items: center;\n"], ["\n  align-items: center;\n"])));
+var StyledMenuItems = styled(MenuItems)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  align-items: center;\n"], ["\n  align-items: center;\n"])));
 var Menu = function (_a) {
     var _b;
     var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark; _a.toggleTheme; _a.langs; _a.setLang; _a.currentLang; _a.cakePriceUsd; var links = _a.links; _a.footerLinks; _a.priceLink; _a.buyCakeLabel; _a.profile; var children = _a.children;
@@ -3559,9 +3559,9 @@ var Menu = function (_a) {
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(StyledFlex, null,
                 React.createElement(Logo$2, { isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
-                !isMobile && React.createElement(MenuItems, { items: links, ml: "24px" })),
+                !isMobile && React.createElement(StyledMenuItems, { items: links, ml: "24px" })),
             React.createElement(Flex, { alignItems: "center" },
-                !isMobile && (React.createElement(StyledBox, { mr: "12px" })),
+                !isMobile && (React.createElement(Box, { mr: "12px" })),
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }))),
         React.createElement(BodyWrapper, null,
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),

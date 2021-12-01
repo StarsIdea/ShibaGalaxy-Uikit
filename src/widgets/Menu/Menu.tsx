@@ -67,7 +67,7 @@ const StyledFlex = styled(Flex)`
   display: flex;
   justify-content: space-between;
 `
-const StyledBox = styled(Box)`
+const StyledMenuItems = styled(MenuItems)`
   align-items: center;
 `
 const Menu: React.FC<NavProps> = ({
@@ -130,13 +130,13 @@ const Menu: React.FC<NavProps> = ({
       <StyledNav showMenu={showMenu}>
         <StyledFlex>
           <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
-          {!isMobile && <MenuItems items={links} ml="24px" />}
+          {!isMobile && <StyledMenuItems items={links} ml="24px" />}
         </StyledFlex>
         <Flex alignItems="center">
           {!isMobile && (
-            <StyledBox mr="12px">
+            <Box mr="12px">
               {/* <CakePrice cakePriceUsd={cakePriceUsd} /> */}
-            </StyledBox>
+            </Box>
           )}
           <UserBlock account={account} login={login} logout={logout} />
         </Flex>
