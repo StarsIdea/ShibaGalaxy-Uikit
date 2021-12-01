@@ -20,7 +20,7 @@ export declare const socials: ({
     href: string;
     items?: undefined;
 })[];
-export declare const MENU_HEIGHT = 100;
+export declare const MENU_HEIGHT = 62;
 export declare const MOBILE_MENU_HEIGHT = 44;
 export declare const MENU_ENTRY_HEIGHT = 62;
 export declare const SIDEBAR_WIDTH_FULL = 240;

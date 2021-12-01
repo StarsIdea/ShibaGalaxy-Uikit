@@ -3161,7 +3161,7 @@ var StyledLink$1 = styled(Link$1)(templateObject_1$F || (templateObject_1$F = __
 });
 var LogoText = styled.div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  font-weight: 700;\n  color: #fff;\n  caret-color: #fff;\n  font-size: 1.25rem;\n  line-height: 1.5;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-family: berlin-sans-regular;\n"], ["\n  font-weight: 700;\n  color: #fff;\n  caret-color: #fff;\n  font-size: 1.25rem;\n  line-height: 1.5;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  font-family: berlin-sans-regular;\n"])));
 var HeaderText = styled.div(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n\n"], ["\n\n"])));
-var BottomText = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  font-size: 0.75rem;\n  line-height: 1;\n  font-weight: 400;\n  background-image: url(/images/Rise-of-Shibas-.gif);\n  background-repeat: no-repeat;\n  background-size: contain;\n  height: 60px;\n  width: 200px;\n"], ["\n  font-size: 0.75rem;\n  line-height: 1;\n  font-weight: 400;\n  background-image: url(/images/Rise-of-Shibas-.gif);\n  background-repeat: no-repeat;\n  background-size: contain;\n  height: 60px;\n  width: 200px;\n"])));
+var BottomText = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  font-size: 0.75rem;\n  line-height: 1;\n  font-weight: 400;\n  // background-image: url(/images/Rise-of-Shibas-.gif);\n  // background-repeat: no-repeat;\n  // background-size: contain;\n  // height: 60px;\n  // width: 200px;\n"], ["\n  font-size: 0.75rem;\n  line-height: 1;\n  font-weight: 400;\n  // background-image: url(/images/Rise-of-Shibas-.gif);\n  // background-repeat: no-repeat;\n  // background-size: contain;\n  // height: 60px;\n  // width: 200px;\n"])));
 var Logo$2 = function (_a) {
     _a.isPushed; _a.togglePush; var isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
@@ -3170,7 +3170,7 @@ var Logo$2 = function (_a) {
         React.createElement(Logo$1, { className: "desktop-icon", isDark: isDark }),
         React.createElement(LogoText, null,
             React.createElement(HeaderText, null, "ShibaGalaxy"),
-            React.createElement(BottomText, null))));
+            React.createElement(BottomText, null, "Rise of Shibas"))));
     return (React.createElement(Flex, null, isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "ShibaGalaxy home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "ShibaGalaxy home page" }, innerLogo))));
 };
 var templateObject_1$F, templateObject_2$e, templateObject_3$7, templateObject_4$3;
@@ -3496,7 +3496,7 @@ var UserBlock = function (_a) {
         ],
     },
 ];
-var MENU_HEIGHT = 100;
+var MENU_HEIGHT = 62;
 
 var Wrapper$1 = styled.div(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
 var StyledNav = styled.nav(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  // background-color: ", ";\n  background-color: #fea726;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  // background-color: ", ";\n  background-color: #fea726;\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {

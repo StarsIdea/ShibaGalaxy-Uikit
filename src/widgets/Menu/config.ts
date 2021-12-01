@@ -212,7 +212,7 @@ export const socials = [
   },
 ];
 
-export const MENU_HEIGHT = 100;
+export const MENU_HEIGHT = 62;
 export const MOBILE_MENU_HEIGHT = 44;
 export const MENU_ENTRY_HEIGHT = 62;
 export const SIDEBAR_WIDTH_FULL = 240;
